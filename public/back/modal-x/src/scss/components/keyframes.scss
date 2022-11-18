@@ -1,0 +1,76 @@
+@include keyframes('fade-in') {
+  0% { opacity: 0 }
+  100% { opacity: .5 }
+}
+
+@include keyframes('jelly') {
+  0% { @include transform(matrix3d(0.7, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
+  3.3% { @include transform(matrix3d(0.82, 0, 0, 0, 0, 0.82, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  6.61% { @include transform(matrix3d(0.9, 0, 0, 0, 0, 0.9, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  9.91% { @include transform(matrix3d(0.949, 0, 0, 0, 0, 0.949, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  13.21% { @include transform(matrix3d(0.977, 0, 0, 0, 0, 0.977, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  19.82% { @include transform(matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  26.33% { @include transform(matrix3d(1.003, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  66.37% { @include transform(matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  100% { @include transform(matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+}
+
+@include keyframes('unjelly') {
+  0% { @include transform(matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  3.3% { @include transform(matrix3d(0.859, 0, 0, 0, 0, 0.859, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  3.5% { @include transform(matrix3d(0.851, 0, 0, 0, 0, 0.851, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  6.61% { @include transform(matrix3d(0.755, 0, 0, 0, 0, 0.755, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  6.91% { @include transform(matrix3d(0.748, 0, 0, 0, 0, 0.748, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  9.91% { @include transform(matrix3d(0.685, 0, 0, 0, 0, 0.685, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  10.31% { @include transform(matrix3d(0.679, 0, 0, 0, 0, 0.679, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); opacity: 1;}
+  13.21% { @include transform(matrix3d(0.641, 0, 0, 0, 0, 0.641, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  13.71% { @include transform(matrix3d(0.636, 0, 0, 0, 0, 0.636, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); opacity: 0; }
+  19.82% { @include transform(matrix3d(0.601, 0, 0, 0, 0, 0.601, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  20.52% { @include transform(matrix3d(0.599, 0, 0, 0, 0, 0.599, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  26.33% { @include transform(matrix3d(0.592, 0, 0, 0, 0, 0.592, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  27.33% { @include transform(matrix3d(0.592, 0, 0, 0, 0, 0.592, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  47.35% { @include transform(matrix3d(0.599, 0, 0, 0, 0, 0.599, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  66.37% { @include transform(matrix3d(0.6, 0, 0, 0, 0, 0.6, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  67.37% { @include transform(matrix3d(0.6, 0, 0, 0, 0, 0.6, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));}
+  100% { @include transform(matrix3d(0.6, 0, 0, 0, 0, 0.6, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); opacity: 0;}
+}
+
+@include keyframes('slide-right') {
+  0%    { @include transform(translateX(100%)); }
+  100%  { @include transform(translateX(0%)); }
+}
+
+@include keyframes('unslide-right') {
+  0%    { @include transform(translateX(0%)); }
+  100%  { @include transform(translateX(100%)); }
+}
+
+@include keyframes('slide-left') {
+  0%    { @include transform(translateX(-100%)); }
+  100%  { @include transform(translateX(0%)); }
+}
+
+@include keyframes('unslide-left') {
+  0%    { @include transform(translateX(0%)); }
+  100%  { @include transform(translateX(-100%));}
+}
+
+@include keyframes('push-right') {
+  0%    { @include transform(translateX(0%)); }
+  100%  { @include transform(translateX(-200px));}
+}
+
+@include keyframes('unpush-right') {
+  0%    { @include transform(translateX(-200px)); }
+  100%  { @include transform(translateX(0%));}
+}
+
+@include keyframes('push-left') {
+  0%    { @include transform(translateX(0%)); }
+  100%  { @include transform(translateX(200px));}
+}
+
+@include keyframes('unpush-left') {
+  0%    { @include transform(translateX(200px)); }
+  100%  { @include transform(translateX(0%));}
+}

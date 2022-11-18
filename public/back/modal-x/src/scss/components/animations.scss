@@ -1,0 +1,60 @@
+/* Animations */
+
+// Default Modal animations
+
+// Encapsulate classes in .bs-extra-modal class
+.bs-extra-modal {
+  &.size-sm {
+    $modal-width: $modal-width / 2;
+  }
+
+  &.jelly {
+    @include animation('jelly 800ms linear both');
+  }
+
+  &.unjelly {
+    @include animation('unjelly 400ms linear both');
+  }
+
+
+  // Slide Right animations
+
+  &.slide-right {
+    @include animation('slide-right #{$ease}');
+  }
+
+  &.unslide-right {
+    @include animation('unslide-right #{$ease}');
+  }
+
+
+  // Slide Left animations
+
+  &.slide-left {
+    @include animation('slide-left #{$ease}');
+  }
+
+  &.unslide-left {
+    @include animation('unslide-left #{$ease}');
+  }
+}
+
+// Push content animations
+
+.push-content {
+  &.push-right {
+    @include animation('push-right #{$ease}');
+  }
+
+  &.unpush-right {
+    @include animation('unpush-right #{$ease}');
+  }
+
+  &.push-left {
+    @include animation('push-left #{$ease}');
+  }
+
+  &.unpush-left {
+    @include animation('unpush-left #{$ease}');
+  }
+}

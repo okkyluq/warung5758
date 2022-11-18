@@ -1,0 +1,30 @@
+/*Left drawer modal*/
+.modal.modal-left {
+  width: $modal-width;
+
+  .modal-dialog {
+    position: absolute;
+    margin: 0 !important;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: $modal-width;
+  }
+
+  .modal-content {
+    position: absolute;
+    height: 100%;
+    border-radius: 0;
+    overflow-y: auto;
+    width: $modal-width;
+  }
+
+  &.size-sm {
+    width: $modal-width / 2;
+
+    .modal-dialog,
+    .modal-content {
+      width: $modal-width / 2;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+/*Right drawer modal*/
+
+.modal.modal-right {
+  width: 624px;
+  right: 0;
+  left: auto;
+
+  .modal-dialog {
+    position: absolute;
+    margin: 0 !important;
+    right: 0;
+    height: 100%;
+    width: 600px;
+  }
+
+  .modal-content {
+    position: absolute;
+    height: 100%;
+    border-radius: 0;
+    overflow-y: auto;
+    width: 600px;
+  }
+}
